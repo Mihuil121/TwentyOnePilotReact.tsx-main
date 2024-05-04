@@ -1,0 +1,21 @@
+.HaedrMain {
+    background-color: black;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3.5rem;
+}
+
+.textP {
+    width: 1rem;
+    display: flex;
+    color: #ffffff;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+}
+
+.textP.active{
+    transform: translateX(0);
+}
+

@@ -1,0 +1,38 @@
+.icon-bec{
+    background-color: black;
+    height: 100vh;
+    width: 3.5rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s
+}
+
+.icon-bec:hover{
+    width: 10rem;
+}
+.icon{
+    margin-bottom: 3rem;
+    transition: 0.1s;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 4rem;
+    color: aliceblue;
+    
+}
+.icon:hover{
+    transform: scale(1.1);
+    color: rgb(255, 238, 6);
+}
+
+.TextCss{
+    opacity: 0;
+    animation: fade 1.1s linear forwards;
+}
+
+@keyframes fade {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
