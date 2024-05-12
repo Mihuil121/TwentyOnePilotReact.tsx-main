@@ -1,0 +1,7 @@
+.Slider {
+    display: flex;
+    justify-content: center;
+}
+.rsis-container{
+    border-radius: 1rem;
+}

@@ -1,0 +1,48 @@
+.Bacgraund {
+    background: url('../../img/BacgraunD.jpg');
+    background-color: black;
+    width: 118rem;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 2rem;
+    margin-top: -10rem;
+}
+
+.blockTextP {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.whoText {
+    margin-top: 135%;
+    font-size: 5rem;
+    color: rgb(255, 238, 6);
+    text-align: center;
+}
+
+.cartText {
+    border: 1px solid rgb(105, 105, 105);
+    background-color: rgb(59, 59, 59);
+    width: 50rem;
+    border-radius: 1rem;
+}
+
+.cartTextP {
+    font-size: 2rem;
+    margin: 1rem 2rem;
+    color: rgb(255, 238, 6);
+}
+
+.photo {
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  

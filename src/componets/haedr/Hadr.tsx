@@ -7,8 +7,7 @@ import Foto5 from '../../img/icons8-книга-50.png';
 import './hadr.css';
 import { text } from './text.ts';
 import MainHaedr from '../main-haedr/MainHaedr.tsx';
-
-
+import MainBody from '../MainBody/MainBody.tsx';
 
 const Hadr: React.FC = () => {
 
@@ -102,7 +101,9 @@ const Hadr: React.FC = () => {
                     )}
                 </div>
             </div>
-
+            <div className="klok"></div>
+           
+            <MainBody />
         </div>
     )
 

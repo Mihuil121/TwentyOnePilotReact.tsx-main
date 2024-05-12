@@ -2,7 +2,11 @@ import React, { useEffect, useState } from 'react'
 import './MainHaedr.css'
 import { textImg } from './DivText.ts'
 
-const MainHaedr = ({ number }) => {
+interface MainHaedrProps{
+  number:number
+}
+
+const MainHaedr:React.FC<MainHaedrProps>  = ({ number }) => {
 
   const [active, setActive] = useState<boolean>(false)
 
@@ -11,7 +15,7 @@ const MainHaedr = ({ number }) => {
     setActive(true);
 
 
-    const time = setTimeout(() => {
+    const time:NodeJS.Timeout = setTimeout(() => {
       setActive(false);
     }, 500);
 
