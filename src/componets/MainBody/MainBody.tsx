@@ -4,12 +4,17 @@ import { MainText } from './Main.ts'
 import { who } from './Main.ts'
 import { Slider } from '../Slider/Slider.tsx'
 
-const MainBody: React.FC = () => {
+
+interface Itype {
+  Image: string;
+  mainT: string;
+}
+
+const MainBody: React.FC<Itype> = ({ Image, mainT }) => {
   return (
     <div>
       <div className="Bacgraund">
         <div className="blockTextP">
-
           <p className='whoText'>
             <Slider />
             <div style={{ marginTop: '8rem' }}>
@@ -17,8 +22,8 @@ const MainBody: React.FC = () => {
             </div>
           </p>
           <div style={{ display: 'flex' }}>
-            {MainText.map((textImg: { mainT: string, Image: string }) => (
-              <div className="blocCart" style={{ margin: "1rem 1rem" }}>
+            {MainText.map((textImg: { mainT: string, Image: string }, index) => (
+              <div className="blocCart" style={{ margin: "1rem 1rem" }} key={index}>
                 <div className="cartText">
                   <p className='cartTextP'>
                     {textImg.mainT}
@@ -31,7 +36,7 @@ const MainBody: React.FC = () => {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default MainBody
+export default MainBody;
